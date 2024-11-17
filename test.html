@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Color Vision Test</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .test-plate {
+      width: 200px;
+      height: 200px;
+      margin: 20px 0;
+      background-size: contain;
+    }
+    .button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Color Vision Test</h1>
+  <div id="test-container">
+    <p>What number do you see in the image below?</p>
+    <div class="test-plate" id="currentPlate"></div>
+    <input type="number" id="answer" placeholder="Enter number">
+    <button class="button" id="nextTest">Next</button>
+  </div>
+  <div id="results" style="display: none">
+    <h2>Test Results</h2>
+    <p id="result-text"></p>
+    <button class="button" id="applySettings">Apply Recommended Settings</button>
+  </div>
+  <script src="test.js"></script>
+</body>
+</html>
